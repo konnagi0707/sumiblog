@@ -1,0 +1,45 @@
+{
+  "id": 34,
+  "name": "宮地 すみれ",
+  "kana": "みやち すみれ",
+  "roman": "SUMIRE MIYACHI",
+  "sourceUrl": "https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+  "greetingListUrl": "https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+  "attributes": [
+    {
+      "label": "生年月日",
+      "value": "2005年12月31日"
+    },
+    {
+      "label": "星座",
+      "value": "やぎ座"
+    },
+    {
+      "label": "身長",
+      "value": "165cm"
+    },
+    {
+      "label": "出身地",
+      "value": "神奈川県"
+    },
+    {
+      "label": "血液型",
+      "value": "不明"
+    }
+  ],
+  "images": {
+    "profile": {
+      "src": "data/member/profile.jpg",
+      "originalSrc": "https://cdn.hinatazaka46.com/images/14/386/776c165ad6849527c84b842dc2869/1000_1000_102400.jpg"
+    },
+    "greetingCard": {
+      "src": "data/member/greeting_card.jpg",
+      "originalSrc": "https://cdn.hinatazaka46.com/images/14/a86/fb9dca4f45000852bdf32f5fcfadb.jpg"
+    },
+    "greetingPhoto": {
+      "src": "data/member/greeting_photo.jpg",
+      "originalSrc": "https://cdn.hinatazaka46.com/images/14/a86/fb9dca4f45000852bdf32f5fcfadb-01.jpg"
+    }
+  },
+  "updatedAt": "2026-05-12T16:12:43.071399+00:00"
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#23470;&#22320;&#12377;&#12415;&#12428; &#20844;&#24335;&#12502;&#12525;&#12464;</title>
+    <meta
+      name="description"
+      content="&#23470;&#22320;&#12377;&#12415;&#12428; &#23448;&#26041;&#21338;&#23458;&#20010;&#20154;&#24402;&#26723;"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Old+Mincho:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button id="open-filters" class="icon-button filter-trigger" type="button" aria-label="&#25171;&#24320;&#31579;&#36873;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="brand" href="./">
+        <img id="brand-avatar" class="brand-avatar" src="data/member/profile.jpg" alt="&#23470;&#22320;&#12377;&#12415;&#12428;" />
+        <span>
+          <strong>&#23470;&#22320;&#12377;&#12415;&#12428; &#20844;&#24335;&#12502;&#12525;&#12464;</strong>
+          <small>Sumire Miyachi archive</small>
+        </span>
+      </a>
+      <button id="open-member" class="icon-button member-trigger" type="button" aria-label="&#25171;&#24320;&#25104;&#21592;&#36164;&#26009;">&#9776;</button>
+    </header>
+
+    <button id="drawer-backdrop" class="drawer-backdrop" type="button" aria-label="&#20851;&#38381;"></button>
+
+    <main class="layout">
+      <aside id="filters" class="sidebar">
+        <section class="panel controls-panel">
+          <div class="section-heading">
+            <h2>&#31579;&#36873;</h2>
+            <span id="post-count">&#27491;&#22312;&#21152;&#36733;</span>
+          </div>
+          <label for="month-select">&#26376;&#20221;</label>
+          <select id="month-select">
+            <option value="all">&#20840;&#37096;</option>
+          </select>
+          <label for="keyword-input">&#20851;&#38190;&#35789;</label>
+          <input id="keyword-input" type="search" placeholder="&#25628;&#32034;&#26631;&#39064;&#25110;&#27491;&#25991;" autocomplete="off" />
+        </section>
+
+        <section class="panel timeline-panel">
+          <div class="section-heading">
+            <h2>&#26102;&#38388;&#32447;</h2>
+            <span id="archive-updated">--</span>
+          </div>
+          <ol id="post-list" class="post-list"></ol>
+        </section>
+      </aside>
+
+      <article id="post-detail" class="content panel">
+        <p class="empty">&#27491;&#22312;&#21152;&#36733;&#25991;&#31456;...</p>
+      </article>
+
+      <aside id="member-panel" class="member-panel panel">
+        <p class="empty">&#27491;&#22312;&#21152;&#36733;&#25104;&#21592;&#36164;&#26009;...</p>
+      </aside>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
