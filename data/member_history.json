@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T16:12:43.072399+00:00",
+  "updatedAt": "2026-05-12T16:35:21.525035+00:00",
   "profileHistory": [
     {
       "label": "2026-05",
@@ -9,6 +9,96 @@
       "image": {
         "src": "data/member/archive/profile/2026-05_bc30029848_1000_1000_102400.jpg",
         "originalSrc": "https://cdn.hinatazaka46.com/images/14/386/776c165ad6849527c84b842dc2869/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2026-02",
+      "updatedAt": "2026-02-03T01:59:57+00:00",
+      "sourceUrl": "https://web.archive.org/web/20260203015957id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2026-02_d15446687a_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/275/21cfa2f15b51c5bc4af0a176770da/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2025-09",
+      "updatedAt": "2025-09-08T20:45:19+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250908204519id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2025-09_139d03f3d5_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/ed9/4bf9b8c45c896fc82510b36fef853/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2025-05",
+      "updatedAt": "2025-05-12T18:28:10+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250512182810id_/https://www.hinatazaka46.com/s/official/artist/34",
+      "image": {
+        "src": "data/member/archive/profile/2025-05_7d6fa56047_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/36c/6d74ffab3174730fd7d0733b6fe59/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2025-01",
+      "updatedAt": "2025-01-21T12:04:38+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250121120438id_/https://www.hinatazaka46.com/s/official/artist/34",
+      "image": {
+        "src": "data/member/archive/profile/2025-01_acfc8b2c8f_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/fa2/dbc520dc2a261472c591987a0a3ae/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2024-09",
+      "updatedAt": "2024-09-13T17:17:58+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240913171758id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2024-09_ba9cb8220c_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/c33/92e4f5413e4613cd436b978e4e56a/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2024-04",
+      "updatedAt": "2024-04-08T13:56:59+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240408135659id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2024-04_7c77796897_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/f97/a3059a71e1e9e7144ad22bc1db8c7/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2024-01",
+      "updatedAt": "2024-01-12T20:35:38+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240112203538id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000&amp;link=ROBO004",
+      "image": {
+        "src": "data/member/archive/profile/2024-01_a4ff9b0a81_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/5e6/cae1076eca5a7b81b0086124d7b52/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2023-07",
+      "updatedAt": "2023-07-03T16:27:10+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230703162710id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2023-07_3a7657e889_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/0a8/aae1b7d8a8830a03f807240cf59cf/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2023-03",
+      "updatedAt": "2023-03-09T11:46:13+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230309114613id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2023-03_293124f95a_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/be5/a19bee9bfb6f0ab52dbf3b3ab9e66/1000_1000_102400.jpg"
+      }
+    },
+    {
+      "label": "2022-11",
+      "updatedAt": "2022-11-27T12:31:28+00:00",
+      "sourceUrl": "https://web.archive.org/web/20221127123128id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2022-11_25d2ae10d9_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/345/72f6d17e8d920b6bcfce08795abbd/1000_1000_102400.jpg"
       }
     }
   ],
@@ -25,6 +115,513 @@
       },
       "updatedAt": "2026-05-12T16:12:43.072399+00:00",
       "sourceUrl": "https://www.hinatazaka46.com/s/official/artist/34?ima=0000"
+    },
+    {
+      "month": "2026-04",
+      "updatedAt": "2026-03-31T19:00:23+00:00",
+      "sourceUrl": "https://web.archive.org/web/20260331190023id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2026-04_97032f080e_a6c5afd96bedfa8c22268e03cd68c.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/978/a6c5afd96bedfa8c22268e03cd68c.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2026-04_cd5683b821_a6c5afd96bedfa8c22268e03cd68c-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/978/a6c5afd96bedfa8c22268e03cd68c-01.jpg"
+      }
+    },
+    {
+      "month": "2026-03",
+      "updatedAt": "2026-03-14T05:38:05+00:00",
+      "sourceUrl": "https://web.archive.org/web/20260314053805id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2026-03_97032f080e_a6c5afd96bedfa8c22268e03cd68c.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/978/a6c5afd96bedfa8c22268e03cd68c.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2026-03_cd5683b821_a6c5afd96bedfa8c22268e03cd68c-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/978/a6c5afd96bedfa8c22268e03cd68c-01.jpg"
+      }
+    },
+    {
+      "month": "2026-02",
+      "updatedAt": "2026-02-03T01:59:57+00:00",
+      "sourceUrl": "https://web.archive.org/web/20260203015957id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2026-02_99a100f673_34b371767b0bb01f7b57752a432eb.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7d6/34b371767b0bb01f7b57752a432eb.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2026-02_04236ac7a8_34b371767b0bb01f7b57752a432eb-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7d6/34b371767b0bb01f7b57752a432eb-01.jpg"
+      }
+    },
+    {
+      "month": "2026-01",
+      "updatedAt": "2026-01-11T05:22:51+00:00",
+      "sourceUrl": "https://web.archive.org/web/20260111052251id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2026-01_09b23d5308_62695af64c5b5beb7b04bf22d28cb.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/5d2/62695af64c5b5beb7b04bf22d28cb.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2026-01_507fc4e55d_62695af64c5b5beb7b04bf22d28cb-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/5d2/62695af64c5b5beb7b04bf22d28cb-01.jpg"
+      }
+    },
+    {
+      "month": "2025-12",
+      "updatedAt": "2025-12-30T21:18:51+00:00",
+      "sourceUrl": "https://web.archive.org/web/20251230211851id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-12_13a2ba731d_32cdf0570d6241b8ecd3e2c3e41a4.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/8db/32cdf0570d6241b8ecd3e2c3e41a4.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-12_28f4e7a637_32cdf0570d6241b8ecd3e2c3e41a4-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/8db/32cdf0570d6241b8ecd3e2c3e41a4-01.jpg"
+      }
+    },
+    {
+      "month": "2025-11",
+      "updatedAt": "2025-11-16T15:36:04+00:00",
+      "sourceUrl": "https://web.archive.org/web/20251116153604id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-11_bd64e83c66_216e2d63cbb41c5234c9f0785f0d3.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7c2/216e2d63cbb41c5234c9f0785f0d3.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-11_6070df8ffc_216e2d63cbb41c5234c9f0785f0d3-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7c2/216e2d63cbb41c5234c9f0785f0d3-01.jpg"
+      }
+    },
+    {
+      "month": "2025-10",
+      "updatedAt": "2025-10-10T06:09:31+00:00",
+      "sourceUrl": "https://web.archive.org/web/20251010060931id_/https://www.hinatazaka46.com/s/official/artist/34",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-10_c221ac45b0_5d4759a2c58319e0f08451b6501fb.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a67/5d4759a2c58319e0f08451b6501fb.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-10_8ea68cc24f_5d4759a2c58319e0f08451b6501fb-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a67/5d4759a2c58319e0f08451b6501fb-01.jpg"
+      }
+    },
+    {
+      "month": "2025-09",
+      "updatedAt": "2025-09-08T20:45:19+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250908204519id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-09_30f3395204_bb42ae9da6e254232186e9e96816c.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/0b5/bb42ae9da6e254232186e9e96816c.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-09_ff12d221ab_bb42ae9da6e254232186e9e96816c-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/0b5/bb42ae9da6e254232186e9e96816c-01.jpg"
+      }
+    },
+    {
+      "month": "2025-08",
+      "updatedAt": "2025-08-23T13:59:21+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250823135921id_/https://www.hinatazaka46.com/s/official/artist/34",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-08_7ea7fe8045_af1435752924d38943a0930ba80ae.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/de0/af1435752924d38943a0930ba80ae.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-08_d5eb63588f_af1435752924d38943a0930ba80ae-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/de0/af1435752924d38943a0930ba80ae-01.jpg"
+      }
+    },
+    {
+      "month": "2025-07",
+      "updatedAt": "2025-07-02T08:18:00+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250702081800id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-07_457998d5d8_bf77c3d264d8ef2846b498c72497a.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9fd/bf77c3d264d8ef2846b498c72497a.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-07_362e984168_bf77c3d264d8ef2846b498c72497a-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9fd/bf77c3d264d8ef2846b498c72497a-01.jpg"
+      }
+    },
+    {
+      "month": "2025-06",
+      "updatedAt": "2025-06-01T08:13:01+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250601081301id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-06_0b42a45fa0_2e8b7f90d8343051849389ef00f12.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/318/2e8b7f90d8343051849389ef00f12.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-06_d948649803_2e8b7f90d8343051849389ef00f12-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/318/2e8b7f90d8343051849389ef00f12-01.jpg"
+      }
+    },
+    {
+      "month": "2025-05",
+      "updatedAt": "2025-05-29T05:14:11+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250529051411id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-05_65fd2960db_fcfcc5f49a02a3e1c84a3e9716bf3.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a0e/fcfcc5f49a02a3e1c84a3e9716bf3.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-05_71b851f22a_fcfcc5f49a02a3e1c84a3e9716bf3-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a0e/fcfcc5f49a02a3e1c84a3e9716bf3-01.jpg"
+      }
+    },
+    {
+      "month": "2025-04",
+      "updatedAt": "2025-04-27T01:36:27+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250427013627id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-04_320452e900_22646d2a3575438ee90e3b08274f3.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/f45/22646d2a3575438ee90e3b08274f3.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-04_f27ab04e9b_22646d2a3575438ee90e3b08274f3-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/f45/22646d2a3575438ee90e3b08274f3-01.jpg"
+      }
+    },
+    {
+      "month": "2025-03",
+      "updatedAt": "2025-03-13T02:37:01+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250313023701id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-03_7aea04e5d3_6391f7d11a8f1835951febad89afb.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/138/6391f7d11a8f1835951febad89afb.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-03_b16df83fa7_6391f7d11a8f1835951febad89afb-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/138/6391f7d11a8f1835951febad89afb-01.jpg"
+      }
+    },
+    {
+      "month": "2025-02",
+      "updatedAt": "2025-02-28T02:35:48+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250228023548id_/https://www.hinatazaka46.com/s/official/artist/34",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-02_235b39aa6d_1c63aa5dcbab086af7dac041254ae.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/872/1c63aa5dcbab086af7dac041254ae.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-02_e2fbe23ca1_1c63aa5dcbab086af7dac041254ae-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/872/1c63aa5dcbab086af7dac041254ae-01.jpg"
+      }
+    },
+    {
+      "month": "2025-01",
+      "updatedAt": "2025-01-30T17:13:23+00:00",
+      "sourceUrl": "https://web.archive.org/web/20250130171323id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2025-01_d0ad555ba5_b2e182768b85b4e6c1e5455761acd.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/683/b2e182768b85b4e6c1e5455761acd.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2025-01_130c54f02b_b2e182768b85b4e6c1e5455761acd-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/683/b2e182768b85b4e6c1e5455761acd-01.jpg"
+      }
+    },
+    {
+      "month": "2024-12",
+      "updatedAt": "2024-12-25T12:37:18+00:00",
+      "sourceUrl": "https://web.archive.org/web/20241225123718id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-12_b36947f603_f1aa2f9b2370e5ef3bd060cc687f4.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e91/f1aa2f9b2370e5ef3bd060cc687f4.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-12_ea33660a1e_f1aa2f9b2370e5ef3bd060cc687f4-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e91/f1aa2f9b2370e5ef3bd060cc687f4-01.jpg"
+      }
+    },
+    {
+      "month": "2024-11",
+      "updatedAt": "2024-11-26T18:16:09+00:00",
+      "sourceUrl": "https://web.archive.org/web/20241126181609id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-11_e15321e99b_ae0bb05e880bbad5a9a7092203965.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/84c/ae0bb05e880bbad5a9a7092203965.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-11_7cbc257f0a_ae0bb05e880bbad5a9a7092203965-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/84c/ae0bb05e880bbad5a9a7092203965-01.jpg"
+      }
+    },
+    {
+      "month": "2024-10",
+      "updatedAt": "2024-10-07T18:00:56+00:00",
+      "sourceUrl": "https://web.archive.org/web/20241007180056id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-10_61f25addc1_dffc1284a60a145a29373ef1e0ae6.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/27b/dffc1284a60a145a29373ef1e0ae6.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-10_3730b60c3a_dffc1284a60a145a29373ef1e0ae6-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/27b/dffc1284a60a145a29373ef1e0ae6-01.jpg"
+      }
+    },
+    {
+      "month": "2024-09",
+      "updatedAt": "2024-09-17T09:26:43+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240917092643id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-09_89adbfbeee_ca08ded05274c1dc069fe3a573340.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/bfa/ca08ded05274c1dc069fe3a573340.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-09_3736fa11e3_ca08ded05274c1dc069fe3a573340-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/bfa/ca08ded05274c1dc069fe3a573340-01.jpg"
+      }
+    },
+    {
+      "month": "2024-08",
+      "updatedAt": "2024-07-31T15:38:03+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240731153803id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-08_7ac90a96e2_97d18dba7c4e9e87c0e2ad922b330.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/dbf/97d18dba7c4e9e87c0e2ad922b330.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-08_e7db276725_97d18dba7c4e9e87c0e2ad922b330-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/dbf/97d18dba7c4e9e87c0e2ad922b330-01.jpg"
+      }
+    },
+    {
+      "month": "2024-07",
+      "updatedAt": "2024-07-22T18:01:23+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240722180123id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-07_7ac90a96e2_97d18dba7c4e9e87c0e2ad922b330.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/dbf/97d18dba7c4e9e87c0e2ad922b330.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-07_e7db276725_97d18dba7c4e9e87c0e2ad922b330-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/dbf/97d18dba7c4e9e87c0e2ad922b330-01.jpg"
+      }
+    },
+    {
+      "month": "2024-06",
+      "updatedAt": "2024-06-21T20:38:08+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240621203808id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-06_3ac4b47ef0_550354bf580451b17a8022df5d860.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/97e/550354bf580451b17a8022df5d860.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-06_fbdccbc4f9_550354bf580451b17a8022df5d860-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/97e/550354bf580451b17a8022df5d860-01.jpg"
+      }
+    },
+    {
+      "month": "2024-05",
+      "updatedAt": "2024-05-15T15:15:35+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240515151535id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-05_fc52e01546_04a83e128ebc8b207543609e60a61.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/fd7/04a83e128ebc8b207543609e60a61.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-05_89e009b9be_04a83e128ebc8b207543609e60a61-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/fd7/04a83e128ebc8b207543609e60a61-01.jpg"
+      }
+    },
+    {
+      "month": "2024-04",
+      "updatedAt": "2024-04-08T13:56:59+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240408135659id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-04_4d1924353e_b771604550b9ac406596b3323b3e4.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/83b/b771604550b9ac406596b3323b3e4.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-04_b6800fc52a_b771604550b9ac406596b3323b3e4-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/83b/b771604550b9ac406596b3323b3e4-01.jpg"
+      }
+    },
+    {
+      "month": "2024-03",
+      "updatedAt": "2024-03-31T07:32:46+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240331073246id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-03_455e8ea345_b2af928d206e465571edf6ace0fd5.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7e2/b2af928d206e465571edf6ace0fd5.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-03_ad31966ff6_b2af928d206e465571edf6ace0fd5-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/7e2/b2af928d206e465571edf6ace0fd5-01.jpg"
+      }
+    },
+    {
+      "month": "2024-02",
+      "updatedAt": "2024-02-29T06:53:32+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240229065332id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-02_a1396d42e0_9a391d05cda54adb28ccd00276318.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9c7/9a391d05cda54adb28ccd00276318.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-02_89ecfceffd_9a391d05cda54adb28ccd00276318-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9c7/9a391d05cda54adb28ccd00276318-01.jpg"
+      }
+    },
+    {
+      "month": "2024-01",
+      "updatedAt": "2024-01-18T08:02:53+00:00",
+      "sourceUrl": "https://web.archive.org/web/20240118080253id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2024-01_f44f925485_6cea0a48f7fc69d071b63c39c9aaa.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/1f2/6cea0a48f7fc69d071b63c39c9aaa.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2024-01_528b48168c_6cea0a48f7fc69d071b63c39c9aaa-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/1f2/6cea0a48f7fc69d071b63c39c9aaa-01.jpg"
+      }
+    },
+    {
+      "month": "2023-12",
+      "updatedAt": "2023-12-01T15:24:24+00:00",
+      "sourceUrl": "https://web.archive.org/web/20231201152424id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-12_62cbe535cc_eb84848626efbd16d69a040e88e86.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/504/eb84848626efbd16d69a040e88e86.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-12_15e8895ff0_eb84848626efbd16d69a040e88e86-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/504/eb84848626efbd16d69a040e88e86-01.jpg"
+      }
+    },
+    {
+      "month": "2023-11",
+      "updatedAt": "2023-11-01T08:36:16+00:00",
+      "sourceUrl": "https://web.archive.org/web/20231101083616id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-11_289d256897_25dfd924719d86f9c814a723a4230.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/48e/25dfd924719d86f9c814a723a4230.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-11_a85be65b34_25dfd924719d86f9c814a723a4230-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/48e/25dfd924719d86f9c814a723a4230-01.jpg"
+      }
+    },
+    {
+      "month": "2023-10",
+      "updatedAt": "2023-09-30T17:42:58+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230930174258id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-10_31a1ec4612_ff8edce7a865958a879b4fd42a1ed.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9b7/ff8edce7a865958a879b4fd42a1ed.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-10_3efcef754b_ff8edce7a865958a879b4fd42a1ed-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9b7/ff8edce7a865958a879b4fd42a1ed-01.jpg"
+      }
+    },
+    {
+      "month": "2023-09",
+      "updatedAt": "2023-09-15T06:34:34+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230915063434id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-09_31a1ec4612_ff8edce7a865958a879b4fd42a1ed.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9b7/ff8edce7a865958a879b4fd42a1ed.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-09_3efcef754b_ff8edce7a865958a879b4fd42a1ed-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/9b7/ff8edce7a865958a879b4fd42a1ed-01.jpg"
+      }
+    },
+    {
+      "month": "2023-08",
+      "updatedAt": "2023-08-29T00:17:19+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230829001719id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-08_105540500c_cbe17622640526722236befd67826.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/084/cbe17622640526722236befd67826.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-08_ac228438aa_cbe17622640526722236befd67826-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/084/cbe17622640526722236befd67826-01.jpg"
+      }
+    },
+    {
+      "month": "2023-07",
+      "updatedAt": "2023-07-31T05:56:29+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230731055629id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-07_b69a829495_680fdeadb38cf7e5b9a6f8f372f54.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e00/680fdeadb38cf7e5b9a6f8f372f54.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-07_2f4074660f_680fdeadb38cf7e5b9a6f8f372f54-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e00/680fdeadb38cf7e5b9a6f8f372f54-01.jpg"
+      }
+    },
+    {
+      "month": "2023-06",
+      "updatedAt": "2023-06-01T10:50:12+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230601105012id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-06_288ddcb38b_9400affde48fb430ee359d6a8dc16.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/b13/9400affde48fb430ee359d6a8dc16.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-06_0fc97d791f_9400affde48fb430ee359d6a8dc16-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/b13/9400affde48fb430ee359d6a8dc16-01.jpg"
+      }
+    },
+    {
+      "month": "2023-05",
+      "updatedAt": "2023-05-31T13:36:57+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230531133657id_/https://www.hinatazaka46.com/s/official/page/greeting?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-05_d7c42cfbd6_93ac9164e8d554a721ec1ec2e8708.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/271/93ac9164e8d554a721ec1ec2e8708.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-05_6221a93245_93ac9164e8d554a721ec1ec2e8708-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/271/93ac9164e8d554a721ec1ec2e8708-01.jpg"
+      }
+    },
+    {
+      "month": "2023-04",
+      "updatedAt": "2023-04-01T11:05:10+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230401110510id_/https://www.hinatazaka46.com/s/official/page/greeting",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-04_33a57298bf_c925b6a30291912b301c8636d7cbe.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a23/c925b6a30291912b301c8636d7cbe.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-04_f5915b4939_c925b6a30291912b301c8636d7cbe-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/a23/c925b6a30291912b301c8636d7cbe-01.jpg"
+      }
+    },
+    {
+      "month": "2023-03",
+      "updatedAt": "2023-03-19T09:48:26+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230319094826id_/https://www.hinatazaka46.com/s/official/page/greeting?s=09",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-03_26e890bd6d_243dafe42ec39a9e4e0e7e5168901.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/3cb/243dafe42ec39a9e4e0e7e5168901.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-03_43a18688cd_243dafe42ec39a9e4e0e7e5168901-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/3cb/243dafe42ec39a9e4e0e7e5168901-01.jpg"
+      }
+    },
+    {
+      "month": "2023-01",
+      "updatedAt": "2023-01-29T03:38:30+00:00",
+      "sourceUrl": "https://web.archive.org/web/20230129033830id_/https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2023-01_a2ceebbb4b_8b3a8f61be6cbf8cb2f68a221d0a3.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/566/8b3a8f61be6cbf8cb2f68a221d0a3.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2023-01_fb7b2e9d79_8b3a8f61be6cbf8cb2f68a221d0a3-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/566/8b3a8f61be6cbf8cb2f68a221d0a3-01.jpg"
+      }
     }
   ]
 }

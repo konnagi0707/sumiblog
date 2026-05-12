@@ -521,6 +521,373 @@ def archive_member_image(
     return {"src": src, "originalSrc": original_url}
 
 
+def archive_member_image_or_empty(
+    session: requests.Session,
+    original_url: str,
+    archive_dir: Path,
+    prefix: str,
+    *,
+    download_images: bool,
+    force_images: bool,
+) -> dict:
+    if not original_url:
+        return {"src": "", "originalSrc": ""}
+    try:
+        return archive_member_image(
+            session,
+            original_url,
+            archive_dir,
+            prefix,
+            download_images=download_images,
+            force_images=force_images,
+        )
+    except Exception as exc:
+        log(f"warning: failed to archive {original_url}: {exc}")
+        return {"src": "", "originalSrc": ""}
+
+
+def timestamp_to_jst_month(timestamp: str) -> str:
+    try:
+        captured_at = datetime.strptime(timestamp[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return timestamp[:4] + "-" + timestamp[4:6]
+    return captured_at.astimezone(JST).strftime("%Y-%m")
+
+
+def timestamp_to_iso(timestamp: str) -> str:
+    try:
+        captured_at = datetime.strptime(timestamp[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return utc_now_iso()
+    return captured_at.isoformat()
+
+
+def fetch_cdx_snapshots(session: requests.Session, url_pattern: str) -> list[dict]:
+    cdx_url = (
+        "https://web.archive.org/cdx/search/cdx"
+        f"?url={url_pattern}"
+        "&output=json"
+        "&fl=timestamp,original,statuscode,mimetype,digest"
+        "&filter=statuscode:200"
+        "&collapse=digest"
+        "&from=202211"
+    )
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            response = session.get(cdx_url, timeout=120)
+            response.raise_for_status()
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt == 3:
+                raise
+            time.sleep(2 * attempt)
+    else:
+        raise last_error or RuntimeError("CDX request failed")
+
+    rows = response.json()
+    if not isinstance(rows, list) or len(rows) <= 1:
+        return []
+    headers = rows[0]
+    snapshots = [dict(zip(headers, row)) for row in rows[1:]]
+    return sorted(
+        (
+            snapshot
+            for snapshot in snapshots
+            if str(snapshot.get("mimetype", "")).startswith("text/html")
+        ),
+        key=lambda snapshot: str(snapshot.get("timestamp", "")),
+    )
+
+
+def archived_snapshot_url(snapshot: dict) -> str:
+    timestamp = snapshot.get("timestamp", "")
+    original = snapshot.get("original", "")
+    return f"https://web.archive.org/web/{timestamp}id_/{original}"
+
+
+def extract_background_urls(style_text: str) -> list[str]:
+    urls = []
+    for match in re.findall(r"url\((['\"]?)(.*?)\1\)", style_text or ""):
+        url = normalize_url(match[1])
+        if url:
+            urls.append(url)
+    return urls
+
+
+def infer_greeting_photo_url(card_url: str) -> str:
+    parsed = urlparse(card_url)
+    path = parsed.path
+    suffix = Path(path).suffix
+    if not suffix:
+        return ""
+    return card_url[: -len(suffix)] + "-01" + suffix
+
+
+def extract_member_images_from_artist_tree(tree: html.HtmlElement) -> dict:
+    raw_image_urls = [
+        normalize_url(src)
+        for src in tree.xpath("//img/@src")
+        if "hinatazaka46.com/images/14/" in normalize_url(src)
+    ]
+    style_image_urls = []
+    for style in tree.xpath("//*[@style]/@style"):
+        style_image_urls.extend(
+            url for url in extract_background_urls(style) if "hinatazaka46.com/images/14/" in url
+        )
+    image_urls = raw_image_urls + style_image_urls
+
+    profile_url = next((url for url in image_urls if "1000_1000_102400" in url), "")
+    greeting_card_url = next(
+        (
+            url
+            for url in image_urls
+            if url != profile_url and "-01." not in Path(urlparse(url).path).name and "400_320_102400" not in url
+        ),
+        "",
+    )
+    greeting_photo_url = next(
+        (url for url in image_urls if "-01." in Path(urlparse(url).path).name),
+        "",
+    )
+
+    return {
+        "profile": profile_url,
+        "greetingCard": greeting_card_url,
+        "greetingPhoto": greeting_photo_url,
+    }
+
+
+def extract_greeting_card_from_greeting_tree(tree: html.HtmlElement) -> str:
+    nodes = tree.xpath(
+        '//*[contains(concat(" ", normalize-space(@class), " "), " card_34 ")]'
+        '//*[contains(concat(" ", normalize-space(@class), " "), " greeting_thumb ")]'
+        '//*[@style]/@style'
+    )
+    for style in nodes:
+        for url in extract_background_urls(style):
+            if "hinatazaka46.com/images/14/" in url:
+                return url
+    return ""
+
+
+def build_profile_history_entry(
+    session: requests.Session,
+    image_url: str,
+    label: str,
+    updated_at: str,
+    source_url: str,
+    *,
+    download_images: bool,
+    force_images: bool,
+) -> dict:
+    return {
+        "label": label,
+        "updatedAt": updated_at,
+        "sourceUrl": source_url,
+        "image": archive_member_image_or_empty(
+            session,
+            image_url,
+            PROFILE_ARCHIVE_DIR,
+            label,
+            download_images=download_images,
+            force_images=force_images,
+        ),
+    }
+
+
+def build_greeting_history_entry(
+    session: requests.Session,
+    month: str,
+    updated_at: str,
+    source_url: str,
+    card_url: str,
+    photo_url: str,
+    *,
+    download_images: bool,
+    force_images: bool,
+) -> dict:
+    return {
+        "month": month,
+        "updatedAt": updated_at,
+        "sourceUrl": source_url,
+        "greetingCard": archive_member_image_or_empty(
+            session,
+            card_url,
+            GREETING_CARD_ARCHIVE_DIR,
+            month,
+            download_images=download_images,
+            force_images=force_images,
+        ),
+        "greetingPhoto": archive_member_image_or_empty(
+            session,
+            photo_url,
+            GREETING_PHOTO_ARCHIVE_DIR,
+            month,
+            download_images=download_images,
+            force_images=force_images,
+        ),
+    }
+
+
+def should_replace_greeting_month(existing: dict | None, updated_at: str) -> bool:
+    if not existing:
+        return True
+    return str(updated_at) > str(existing.get("updatedAt") or "")
+
+
+def backfill_member_history(
+    session: requests.Session,
+    history: dict,
+    *,
+    download_images: bool,
+    force_images: bool,
+) -> dict:
+    profile_by_image = {
+        item.get("image", {}).get("originalSrc"): item
+        for item in history.get("profileHistory", [])
+        if isinstance(item, dict) and item.get("image", {}).get("originalSrc")
+    }
+    greeting_by_month = {
+        item.get("month"): item
+        for item in history.get("greetingHistory", [])
+        if isinstance(item, dict) and item.get("month")
+    }
+
+    artist_snapshots = fetch_cdx_snapshots(
+        session,
+        "www.hinatazaka46.com/s/official/artist/34*",
+    )
+    log(f"wayback artist snapshots: {len(artist_snapshots)}")
+    for snapshot in artist_snapshots:
+        timestamp = str(snapshot.get("timestamp", ""))
+        source_url = archived_snapshot_url(snapshot)
+        try:
+            tree = html.fromstring(request_text(session, source_url))
+        except Exception as exc:
+            log(f"warning: failed artist snapshot {timestamp}: {exc}")
+            continue
+
+        images = extract_member_images_from_artist_tree(tree)
+        label = timestamp_to_jst_month(timestamp)
+        updated_at = timestamp_to_iso(timestamp)
+        profile_url = images.get("profile", "")
+        if profile_url and profile_url not in profile_by_image:
+            entry = build_profile_history_entry(
+                session,
+                profile_url,
+                label,
+                updated_at,
+                source_url,
+                download_images=download_images,
+                force_images=force_images,
+            )
+            if entry.get("image", {}).get("src"):
+                profile_by_image[profile_url] = entry
+
+        card_url = images.get("greetingCard", "")
+        photo_url = images.get("greetingPhoto", "") or infer_greeting_photo_url(card_url)
+        if card_url and should_replace_greeting_month(greeting_by_month.get(label), updated_at):
+            greeting_by_month[label] = build_greeting_history_entry(
+                session,
+                label,
+                updated_at,
+                source_url,
+                card_url,
+                photo_url,
+                download_images=download_images,
+                force_images=force_images,
+            )
+        time.sleep(REQUEST_DELAY_SECONDS)
+
+    greeting_snapshots = fetch_cdx_snapshots(
+        session,
+        "www.hinatazaka46.com/s/official/page/greeting*",
+    )
+    log(f"wayback greeting snapshots: {len(greeting_snapshots)}")
+    for snapshot in greeting_snapshots:
+        timestamp = str(snapshot.get("timestamp", ""))
+        month = timestamp_to_jst_month(timestamp)
+        updated_at = timestamp_to_iso(timestamp)
+        if not should_replace_greeting_month(greeting_by_month.get(month), updated_at):
+            continue
+
+        source_url = archived_snapshot_url(snapshot)
+        try:
+            tree = html.fromstring(request_text(session, source_url))
+        except Exception as exc:
+            log(f"warning: failed greeting snapshot {timestamp}: {exc}")
+            continue
+
+        card_url = extract_greeting_card_from_greeting_tree(tree)
+        if not card_url:
+            continue
+        greeting_by_month[month] = build_greeting_history_entry(
+            session,
+            month,
+            updated_at,
+            source_url,
+            card_url,
+            infer_greeting_photo_url(card_url),
+            download_images=download_images,
+            force_images=force_images,
+        )
+        time.sleep(REQUEST_DELAY_SECONDS)
+
+    if download_images:
+        for item in profile_by_image.values():
+            image = item.get("image", {}) if isinstance(item, dict) else {}
+            original = image.get("originalSrc", "")
+            if original:
+                item["image"] = archive_member_image_or_empty(
+                    session,
+                    original,
+                    PROFILE_ARCHIVE_DIR,
+                    str(item.get("label") or timestamp_to_jst_month(str(item.get("updatedAt") or ""))),
+                    download_images=download_images,
+                    force_images=force_images,
+                )
+
+        for item in greeting_by_month.values():
+            month = str(item.get("month") or "")
+            card = item.get("greetingCard", {}) if isinstance(item, dict) else {}
+            photo = item.get("greetingPhoto", {}) if isinstance(item, dict) else {}
+            card_original = card.get("originalSrc", "")
+            photo_original = photo.get("originalSrc", "") or infer_greeting_photo_url(card_original)
+            if card_original:
+                item["greetingCard"] = archive_member_image_or_empty(
+                    session,
+                    card_original,
+                    GREETING_CARD_ARCHIVE_DIR,
+                    month,
+                    download_images=download_images,
+                    force_images=force_images,
+                )
+            if photo_original:
+                item["greetingPhoto"] = archive_member_image_or_empty(
+                    session,
+                    photo_original,
+                    GREETING_PHOTO_ARCHIVE_DIR,
+                    month,
+                    download_images=download_images,
+                    force_images=force_images,
+                )
+
+    history["profileHistory"] = sorted(
+        profile_by_image.values(),
+        key=lambda item: str(item.get("updatedAt") or item.get("label") or ""),
+        reverse=True,
+    )
+    history["greetingHistory"] = sorted(
+        greeting_by_month.values(),
+        key=lambda item: str(item.get("month") or ""),
+        reverse=True,
+    )
+    history["updatedAt"] = utc_now_iso()
+    return history
+
+
 def update_member_history(
     session: requests.Session,
     member: dict,
@@ -656,6 +1023,13 @@ def update_archive(args: argparse.Namespace) -> None:
             download_images=not args.no_images,
             force_images=args.force_images,
         )
+        if args.backfill_member_history:
+            member_history = backfill_member_history(
+                session,
+                member_history,
+                download_images=not args.no_images,
+                force_images=args.force_images,
+            )
         write_json(MEMBER_HISTORY_PATH, member_history)
     except Exception as exc:
         log(f"warning: failed to update member profile/history: {exc}")
@@ -683,6 +1057,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--refresh-existing", action="store_true", help="Re-parse posts already present in data.")
     parser.add_argument("--no-images", action="store_true", help="Store official CDN image URLs without downloading.")
     parser.add_argument("--force-images", action="store_true", help="Re-download images even when files already exist.")
+    parser.add_argument(
+        "--backfill-member-history",
+        action="store_true",
+        help="Backfill profile and greeting archives from Wayback Machine snapshots.",
+    )
     return parser.parse_args()
 
 
