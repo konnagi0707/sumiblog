@@ -3,7 +3,9 @@ name: Update blog archive
 on:
   workflow_dispatch:
   schedule:
-    - cron: "12 * * * *"
+    # Check every two hours. New content is still published promptly, while
+    # timestamp-only refreshes no longer create commits or Pages builds.
+    - cron: "12 */2 * * *"
 
 permissions:
   contents: write
@@ -27,7 +29,22 @@ jobs:
       - name: Update archive
         run: python scripts/update_blog.py
 
+      - name: Keep only meaningful archive changes
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet -I '"updatedAt":' -- data && \
+             test -z "$(git ls-files --others --exclude-standard -- data)"; then
+            git restore -- data
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No blog or profile changes."
+            exit 0
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
       - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update blog archive"
