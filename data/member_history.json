@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T09:44:32.212359+00:00",
+  "updatedAt": "2026-08-31T20:02:56.920761+00:00",
   "profileHistory": [
     {
       "label": "2026-05",
@@ -103,6 +103,19 @@
     }
   ],
   "greetingHistory": [
+    {
+      "month": "2026-09",
+      "greetingCard": {
+        "src": "data/member/archive/greeting_card/2026-09_e965ed3a15_0ccb8e8b180453b667122edf56bf0.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e4e/0ccb8e8b180453b667122edf56bf0.jpg"
+      },
+      "greetingPhoto": {
+        "src": "data/member/archive/greeting_photo/2026-09_c9a40dbf65_0ccb8e8b180453b667122edf56bf0-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e4e/0ccb8e8b180453b667122edf56bf0-01.jpg"
+      },
+      "updatedAt": "2026-08-31T20:02:56.920761+00:00",
+      "sourceUrl": "https://www.hinatazaka46.com/s/official/artist/34?ima=0000"
+    },
     {
       "month": "2026-08",
       "greetingCard": {
