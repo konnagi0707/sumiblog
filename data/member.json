@@ -30,7 +30,7 @@
   "images": {
     "profile": {
       "src": "data/member/profile.jpg",
-      "originalSrc": "https://cdn.hinatazaka46.com/images/14/386/776c165ad6849527c84b842dc2869/1000_1000_102400.jpg"
+      "originalSrc": "https://cdn.hinatazaka46.com/images/14/70b/8ff6af247f3b0beabe5f904d2bc6d/1000_1000_102400.jpg"
     },
     "greetingCard": {
       "src": "data/member/greeting_card.jpg",
@@ -41,5 +41,5 @@
       "originalSrc": "https://cdn.hinatazaka46.com/images/14/e4e/0ccb8e8b180453b667122edf56bf0-01.jpg"
     }
   },
-  "updatedAt": "2026-08-31T20:02:56.920098+00:00"
+  "updatedAt": "2026-09-01T05:05:33.242193+00:00"
 }

@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T20:02:56.920761+00:00",
+  "updatedAt": "2026-09-01T05:05:33.242761+00:00",
   "profileHistory": [
+    {
+      "label": "2026-09",
+      "updatedAt": "2026-09-01T05:05:33.242761+00:00",
+      "sourceUrl": "https://www.hinatazaka46.com/s/official/artist/34?ima=0000",
+      "image": {
+        "src": "data/member/archive/profile/2026-09_fcac4ca664_1000_1000_102400.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/70b/8ff6af247f3b0beabe5f904d2bc6d/1000_1000_102400.jpg"
+      }
+    },
     {
       "label": "2026-05",
       "updatedAt": "2026-05-12T16:12:43.072399+00:00",
