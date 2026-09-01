@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T05:05:33.242761+00:00",
+  "updatedAt": "2026-09-01T11:37:45.662417+00:00",
   "profileHistory": [
     {
       "label": "2026-09",
@@ -115,14 +115,14 @@
     {
       "month": "2026-09",
       "greetingCard": {
-        "src": "data/member/archive/greeting_card/2026-09_e965ed3a15_0ccb8e8b180453b667122edf56bf0.jpg",
-        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e4e/0ccb8e8b180453b667122edf56bf0.jpg"
+        "src": "data/member/archive/greeting_card/2026-09_0c8e8647af_24bf01d0dd4744e4f544f77c5fb6d.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/3ec/24bf01d0dd4744e4f544f77c5fb6d.jpg"
       },
       "greetingPhoto": {
-        "src": "data/member/archive/greeting_photo/2026-09_c9a40dbf65_0ccb8e8b180453b667122edf56bf0-01.jpg",
-        "originalSrc": "https://cdn.hinatazaka46.com/images/14/e4e/0ccb8e8b180453b667122edf56bf0-01.jpg"
+        "src": "data/member/archive/greeting_photo/2026-09_65118c6b9e_24bf01d0dd4744e4f544f77c5fb6d-01.jpg",
+        "originalSrc": "https://cdn.hinatazaka46.com/images/14/3ec/24bf01d0dd4744e4f544f77c5fb6d-01.jpg"
       },
-      "updatedAt": "2026-08-31T20:02:56.920761+00:00",
+      "updatedAt": "2026-09-01T11:37:45.662417+00:00",
       "sourceUrl": "https://www.hinatazaka46.com/s/official/artist/34?ima=0000"
     },
     {
